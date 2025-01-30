@@ -1,2 +1,2 @@
-export * from './YMapButtonExample/YMapButtonExample';
+export * from './YMapSignpost/YMapSignpost';
 export * from './types';

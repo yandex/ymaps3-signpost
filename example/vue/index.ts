@@ -1,4 +1,4 @@
-import {LOCATION} from '../common';
+import {LOCATION, MARKERS_COORDINATES} from '../common';
 
 window.map = null;
 
@@ -9,7 +9,8 @@ async function main() {
 
     const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapControls} = vuefy.module(ymaps3);
 
-    const {YMapButtonExample} = vuefy.module(await ymaps3.import('ymaps3-signpost'));
+    const {YMapSignpost} = vuefy.module(await ymaps3.import('ymaps3-signpost'));
+    const {YMapDefaultMarker} = vuefy.module(await ymaps3.import('@yandex/ymaps3-default-ui-theme'));
 
     const app = Vue.createApp({
         components: {
@@ -17,22 +18,22 @@ async function main() {
             YMapDefaultSchemeLayer,
             YMapDefaultFeaturesLayer,
             YMapControls,
-            YMapButtonExample
+            YMapDefaultMarker,
+            YMapSignpost
         },
         setup() {
             const refMap = (ref) => {
                 window.map = ref?.entity;
             };
             const onClick = () => alert('Click!');
-            return {LOCATION, refMap, onClick};
+            return {LOCATION, MARKERS_COORDINATES, refMap, onClick};
         },
         template: `
             <YMap :location="LOCATION" :ref="refMap">
                 <YMapDefaultSchemeLayer />
                 <YMapDefaultFeaturesLayer />
-                <YMapControls position="right">
-                    <YMapButtonExample text="My button" :onClick="onClick" />
-                </YMapControls>
+                <YMapSignpost :points="MARKERS_COORDINATES" />
+                <YMapDefaultMarker v-for="point of MARKERS_COORDINATES" :coordinates="point" iconName="fallback" size="normal" />
             </YMap>`
     });
     app.mount('#app');

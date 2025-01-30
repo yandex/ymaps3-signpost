@@ -1,4 +1,4 @@
-import {LOCATION} from '../common';
+import {LOCATION, MARKERS_COORDINATES} from '../common';
 
 window.map = null;
 
@@ -7,11 +7,9 @@ async function main() {
     const [ymaps3React] = await Promise.all([ymaps3.import('@yandex/ymaps3-reactify'), ymaps3.ready]);
     const reactify = ymaps3React.reactify.bindTo(React, ReactDOM);
 
-    const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapControls} = reactify.module(ymaps3);
-
-    const {useState, useCallback} = React;
-
-    const {YMapButtonExample} = reactify.module(await ymaps3.import('ymaps3-signpost'));
+    const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer} = reactify.module(ymaps3);
+    const {YMapSignpost} = reactify.module(await ymaps3.import('ymaps3-signpost'));
+    const {YMapDefaultMarker} = reactify.module(await ymaps3.import('@yandex/ymaps3-default-ui-theme'));
 
     ReactDOM.render(
         <React.StrictMode>
@@ -21,16 +19,14 @@ async function main() {
     );
 
     function App() {
-        const [location, setLocation] = useState(LOCATION);
-        const onClick = useCallback(() => alert('Click!'), []);
-
         return (
-            <YMap location={location} ref={(x) => (map = x)}>
+            <YMap location={LOCATION} ref={(x) => (map = x)}>
                 <YMapDefaultSchemeLayer />
                 <YMapDefaultFeaturesLayer />
-                <YMapControls position="right">
-                    <YMapButtonExample text={'My button'} onClick={onClick} />
-                </YMapControls>
+                <YMapSignpost points={MARKERS_COORDINATES} />
+                {MARKERS_COORDINATES.map((coordinates, index) => (
+                    <YMapDefaultMarker key={index} coordinates={coordinates} iconName="fallback" size="normal" />
+                ))}
             </YMap>
         );
     }

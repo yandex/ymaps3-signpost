@@ -24,15 +24,24 @@ npm i ymaps3-signpost
 and dynamic import
 
 ```js
-await ymaps3.ready;
+import 'ymaps3-signpost/dist/esm/index.css';
+import { YMapSignpost } from 'ymaps3-signpost';
 
-// ...
+main();
+async function main() {
+    await ymaps3.ready;
+    const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer} = ymaps3;
+    const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme')
 
-const {YMapButtonExample} = await import('ymaps3-signpost');
+    map = new YMap(document.getElementById('app'), {location: LOCATION});
 
-// ...
-
-map.addChild(new YMapButtonExample(props));
+    map.addChild(new YMapDefaultSchemeLayer({}));
+    map.addChild(new YMapDefaultFeaturesLayer({}));
+    map.addChild(new YMapSignpost({ points: MARKERS_COORDINATES }));
+    MARKERS_COORDINATES.forEach(point => {
+        map.addChild(new YMapDefaultMarker({ coordinates: point, iconName: "fallback", size: "normal" }));
+    })
+}
 ```
 
 ### Usage without npm
@@ -42,7 +51,7 @@ You can use CDN with module loading handler in JS API on your page.
 Just use `ymaps3.import`:
 
 ```js
-const pkg = await ymaps3.import('ymaps3-signpost');
+const { YMapSignpost } = await ymaps3.import('ymaps3-signpost');
 ```
 
 By default `ymaps3.import` can load self modules.
