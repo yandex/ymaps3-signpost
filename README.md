@@ -15,32 +15,33 @@ The package is located in the `dist` folder:
 - `dist/esm` es6 modules for direct connection in your project
 - `dist/index.js` Yandex JS Module
 
-Recommended use `YMapButtonExample` as usual npm package:
+Recommended use `YMapSignpost` as usual npm package:
 
 ```sh
-npm i ymaps3-signpost
+npm i @yandex/ymaps3-signpost
 ```
 
 and dynamic import
 
 ```js
-import 'ymaps3-signpost/dist/esm/index.css';
-import { YMapSignpost } from 'ymaps3-signpost';
+import '@yandex/ymaps3-signpost/dist/esm/index.css';
+import {YMapSignpost} from '@yandex/ymaps3-signpost';
 
 main();
 async function main() {
-    await ymaps3.ready;
-    const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer} = ymaps3;
-    const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme')
+  await ymaps3.ready;
+  const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer} = ymaps3;
+  const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
 
-    map = new YMap(document.getElementById('app'), {location: LOCATION});
+  map = new YMap(document.getElementById('app'), {location: LOCATION}, [
+    new YMapDefaultSchemeLayer({}),
+    new YMapDefaultFeaturesLayer({})
+  ]);
 
-    map.addChild(new YMapDefaultSchemeLayer({}));
-    map.addChild(new YMapDefaultFeaturesLayer({}));
-    map.addChild(new YMapSignpost({ points: MARKERS_COORDINATES }));
-    MARKERS_COORDINATES.forEach(point => {
-        map.addChild(new YMapDefaultMarker({ coordinates: point, iconName: "fallback", size: "normal" }));
-    })
+  map.addChild(new YMapSignpost({points: MARKERS_COORDINATES}));
+  MARKERS_COORDINATES.forEach((point) => {
+    map.addChild(new YMapDefaultMarker({coordinates: point, iconName: 'fallback', size: 'normal'}));
+  });
 }
 ```
 
@@ -51,12 +52,12 @@ You can use CDN with module loading handler in JS API on your page.
 Just use `ymaps3.import`:
 
 ```js
-const { YMapSignpost } = await ymaps3.import('ymaps3-signpost');
+const {YMapSignpost} = await ymaps3.import('@yandex/ymaps3-signpost');
 ```
 
 By default `ymaps3.import` can load self modules.
 If you want also load your package, should register cdn:
 
 ```js
-ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', 'ymaps3-signpost@latest');
+ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', '@yandex/ymaps3-signpost@latest');
 ```

@@ -9,7 +9,7 @@ async function main() {
 
     const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapControls} = vuefy.module(ymaps3);
 
-    const {YMapSignpost} = vuefy.module(await ymaps3.import('ymaps3-signpost'));
+    const {YMapSignpost} = vuefy.module(await ymaps3.import('@yandex/ymaps3-signpost'));
     const {YMapDefaultMarker} = vuefy.module(await ymaps3.import('@yandex/ymaps3-default-ui-theme'));
 
     const app = Vue.createApp({

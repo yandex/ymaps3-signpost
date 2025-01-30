@@ -27,22 +27,20 @@ For the final build:
 npm run build
 ```
 
-
 ## Development loader
 
 For development, you shold load from `dist`:
 
 ```js
 ymaps3.import.loaders.unshift(async (pkg) => {
-    if (!pkg.startsWith('ymaps3-signpost')) return;
+  if (!pkg.startsWith('@yandex/ymaps3-signpost')) return;
 
-    // Load script from dev server
-    await ymaps3.import.script(`./dist/index.js`);
+  // Load script from dev server
+  await ymaps3.import.script(`./dist/index.js`);
 
-    return window['ymaps3-signpost'];
+  return window['@yandex/ymaps3-signpost'];
 });
 ```
-
 
 ## GitHub actions
 

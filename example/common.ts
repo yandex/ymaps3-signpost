@@ -1,11 +1,11 @@
-import type {YMapLocationRequest, LngLatBounds, LngLat} from '@yandex/ymaps3-types';
+import type {LngLat, YMapLocationRequest} from '@yandex/ymaps3-types';
 
 ymaps3.ready.then(() => {
     ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', '@yandex/ymaps3-default-ui-theme@0.0');
 });
 
 ymaps3.import.loaders.unshift(async (pkg) => {
-    if (!pkg.startsWith('ymaps3-signpost')) {
+    if (!pkg.startsWith('@yandex/ymaps3-signpost')) {
         return;
     }
 
@@ -15,7 +15,7 @@ ymaps3.import.loaders.unshift(async (pkg) => {
         await ymaps3.import.script(`https://unpkg.com/${pkg}/dist/index.js`);
     }
 
-    return window['ymaps3-signpost'];
+    return window['@yandex/ymaps3-signpost'];
 });
 
 export const MARKERS_COORDINATES: Array<LngLat> = [

@@ -8,7 +8,7 @@ async function main() {
     const reactify = ymaps3React.reactify.bindTo(React, ReactDOM);
 
     const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer} = reactify.module(ymaps3);
-    const {YMapSignpost} = reactify.module(await ymaps3.import('ymaps3-signpost'));
+    const {YMapSignpost} = reactify.module(await ymaps3.import('@yandex/ymaps3-signpost'));
     const {YMapDefaultMarker} = reactify.module(await ymaps3.import('@yandex/ymaps3-default-ui-theme'));
 
     ReactDOM.render(
