@@ -4,8 +4,8 @@
 
 Yandex JS API package
 
-[![npm version](https://badge.fury.io/js/ymaps3-signpost.svg)](https://badge.fury.io/js/ymaps3-signpost)
-[![npm](https://img.shields.io/npm/dm/ymaps3-signpost.svg)](https://www.npmjs.com/package/ymaps3-signpost)
+[![npm version](https://badge.fury.io/js/@yandex%2Fymaps3-signpost.svg)](https://badge.fury.io/js/ymaps3-signpost)
+[![npm](https://img.shields.io/npm/dm/%40yandex%2Fymaps3-signpost)](https://www.npmjs.com/package/ymaps3-signpost)
 
 ## How use
 
@@ -18,7 +18,7 @@ The package is located in the `dist` folder:
 Recommended use `YMapSignpost` as usual npm package:
 
 ```sh
-npm i @yandex/ymaps3-signpost
+npm install @yandex/ymaps3-signpost
 ```
 
 and dynamic import
