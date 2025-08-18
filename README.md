@@ -15,23 +15,29 @@ The package is located in the `dist` folder:
 - `dist/esm` es6 modules for direct connection in your project
 - `dist/index.js` Yandex JS Module
 
-Recommended use `YMapSignpost` as usual npm package:
+Recommended use `ymaps3-signpost` as usual npm package:
 
 ```sh
 npm install @yandex/ymaps3-signpost
 ```
 
+You also need to import css styles into your project:
+
+```css
+/* index.css */
+@import '@yandex/ymaps3-signpost/dist/esm/index.css';
+```
+
 and dynamic import
 
 ```js
-import '@yandex/ymaps3-signpost/dist/esm/index.css';
-import {YMapSignpost} from '@yandex/ymaps3-signpost';
-
 main();
 async function main() {
   await ymaps3.ready;
   const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer} = ymaps3;
-  const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
+  const {YMapDefaultMarker} = await import('@yandex/ymaps3-default-ui-theme');
+
+  const {YMapSignpost} = await import('@yandex/ymaps3-signpost');
 
   map = new YMap(document.getElementById('app'), {location: LOCATION}, [
     new YMapDefaultSchemeLayer({}),
@@ -49,15 +55,15 @@ async function main() {
 
 You can use CDN with module loading handler in JS API on your page.
 
-Just use `ymaps3.import`:
-
-```js
-const {YMapSignpost} = await ymaps3.import('@yandex/ymaps3-signpost');
-```
-
 By default `ymaps3.import` can load self modules.
 If you want also load your package, should register cdn:
 
 ```js
 ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', '@yandex/ymaps3-signpost@latest');
+```
+
+Just use `ymaps3.import`:
+
+```js
+const {YMapSignpost} = await ymaps3.import('@yandex/ymaps3-signpost');
 ```
