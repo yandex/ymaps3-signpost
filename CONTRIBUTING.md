@@ -7,33 +7,37 @@ nvm use
 npm ci
 ```
 
-For the examples and JS API integration tests, set `APIKEY` in an untracked `.env`
-file. Obtain a key at https://developer.tech.yandex.ru/ and allow the referrer you
+For builds, examples and JS API integration tests, set `APIKEY` in an untracked
+`.env` file. Obtain a key at https://developer.tech.yandex.ru/ and allow the referrer you
 use locally (for example, `http://yandex.localhost/`). Set `REFERRER` accordingly.
 
 ```sh
 npm start
 npm run lint
 npm run build
-REFERRER=http://yandex.localhost/ npm test -- --runInBand
+REFERRER=http://yandex.localhost/ npm test
 npm pack --dry-run
 ```
 
-Building the package makes no JS API requests. In CI it uses `APIKEY=build-only`
-because the shared webpack configuration requires a nonempty key.
+Building the package makes no JS API requests, but the shared webpack configuration
+in the currently installed CLI still requires a nonempty `APIKEY`. CI supplies it
+from GitHub Secrets. `REFERRER` is used by integration tests, not the build.
 
 ## GitHub Actions
 
-- `.github/workflows/tests.yml` installs, lints, builds and inspects the package on
-  main, pull requests and manual runs. JS API integration tests run when the
-  `APIKEY` secret is available. Missing credentials produce an explicit warning
-  and summary; fork PRs still run the checks that do not require secrets.
+- `.github/workflows/tests.yml` runs the `build` job on pushes to main and pull
+  requests targeting main: install, lint, build, JS API integration tests and
+  package inspection. Tests are required; missing credentials fail CI. Fork pull
+  requests do not receive repository secrets and cannot pass this workflow as-is.
+  Configure the required status check as `build`, with GitHub Actions as its source.
 - `.github/workflows/release.yml` releases version tags without a `v` prefix, such
   as `0.0.3`. A manual run must also select a tag matching `package.json`.
-  A release always requires passing integration tests with a real `APIKEY`.
+  The tagged commit must belong to the history of main. A release always requires
+  passing integration tests with a real `APIKEY`.
 
-Configure the GitHub Actions secrets `APIKEY` and, if needed, `REFERRER` (default:
-`http://yandex.localhost/`). No npm publish token is required.
+Configure the GitHub Actions secrets `APIKEY` and `REFERRER` using a referrer
+allowed for the key (for example, `http://yandex.localhost/`). No npm publish token
+is required.
 
 ## Enable npm publishing
 
