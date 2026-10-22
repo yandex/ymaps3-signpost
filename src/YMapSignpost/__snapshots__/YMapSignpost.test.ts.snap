@@ -451,12 +451,6 @@ exports[`YMap smoke test should make map 1`] = `
     },
     {
       "attributes": {
-        "class": "ymaps3--controls ymaps3--controls_bottom ymaps3--controls_left ymaps3--controls_horizontal",
-      },
-      "nodeName": "ymaps3",
-    },
-    {
-      "attributes": {
         "class": "ymaps3-signpost-control NNE",
       },
       "children": [
@@ -1099,12 +1093,6 @@ exports[`YMap smoke test should match snapshot map 2 1`] = `
           "nodeName": "ymaps3",
         },
       ],
-      "nodeName": "ymaps3",
-    },
-    {
-      "attributes": {
-        "class": "ymaps3--controls ymaps3--controls_bottom ymaps3--controls_left ymaps3--controls_horizontal",
-      },
       "nodeName": "ymaps3",
     },
     {
