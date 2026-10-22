@@ -1,0 +1,1285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`YMap smoke test should make map 1`] = `
+{
+  "attributes": {
+    "class": "ymaps3--map-container",
+  },
+  "children": [
+    {
+      "attributes": {
+        "class": "ymaps3--map",
+        "style": "width: 643px; height: 856px;",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3--main-engine-container",
+          },
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {
+                    "class": "ymaps3--layer ymaps3--tile-layer",
+                    "style": "opacity: 1; perspective: 1597.3177456394797px;",
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "class": "ymaps3--tile-layer__container",
+                        "data-z": "12",
+                        "style": "transform: rotateX(0.00000rad) translate3d(0px, 0px, 0px) rotateZ(0.00000rad) translate3d(0px, 0px, 0px); z-index: 12;",
+                      },
+                      "nodeName": "ymaps3",
+                    },
+                  ],
+                  "nodeName": "ymaps3",
+                },
+              ],
+              "nodeName": "ymaps3",
+            },
+          ],
+          "nodeName": "ymaps3",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3--top-engine-container",
+          },
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {
+                    "class": "ymaps3--layer ymaps3--graphics-layer",
+                    "style": "opacity: 1; perspective: 1597.3177456394797px;",
+                  },
+                  "nodeName": "ymaps3",
+                },
+                {
+                  "attributes": {
+                    "class": "ymaps3--layer ymaps3--marker-layer",
+                    "style": "opacity: 1; transform-origin: 321.5px 428px;",
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(206.5000000000px, -13.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(106.5000000000px, 295.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-287.5000000000px, 262.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(499.5000000000px, 342.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-103.5000000000px, 329.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-175.5000000000px, 572.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-45.5000000000px, 985.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(976.5000000000px, -167.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(975.5000000000px, 425.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-29.5000000000px, 695.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-321.5000000000px, 357.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-301.5000000000px, -211.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(525.5000000000px, 456.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(32.5000000000px, 151.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-139.5000000000px, -135.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-142.5000000000px, 304.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-238.5000000000px, 334.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-178.5000000000px, 910.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(522.5000000000px, -73.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(932.5000000000px, 750.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(106.5000000000px, 90.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(789.5000000000px, 12.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-337.5000000000px, 1084.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(445.5000000000px, 741.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(977.5000000000px, 710.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                  ],
+                  "nodeName": "ymaps3",
+                },
+              ],
+              "nodeName": "ymaps3",
+            },
+          ],
+          "nodeName": "ymaps3",
+        },
+      ],
+      "nodeName": "ymaps3",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3--map-copyrights ymaps3--map-copyrights_bottom ymaps3--map-copyrights_right",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3--map-copyrights__container",
+          },
+          "children": [
+            {
+              "attributes": {
+                "class": "ymaps3--map-copyrights__text",
+                "title": "",
+              },
+              "nodeName": "ymaps3",
+            },
+            {
+              "attributes": {
+                "class": "ymaps3--map-copyrights__user-agreements",
+                "href": "https://yandex.com/legal/maps_termsofuse/?lang=en_US",
+                "target": "_blank",
+              },
+              "children": [
+                "User Agreement",
+              ],
+              "nodeName": "a",
+            },
+          ],
+          "nodeName": "ymaps3",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3--map-copyrights__logo ymaps3--icon-logo-en-black",
+            "href": "https://yandex.ru/maps/?from=api-maps&utm_source=jsapi&ll=37.62308199999998%2C55.752539999993736&origin=jsapi_3&z=12&l=map",
+          },
+          "nodeName": "a",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3--map-copyrights__scale",
+            "style": "bottom: 36px;",
+          },
+          "nodeName": "ymaps3",
+        },
+      ],
+      "nodeName": "ymaps3",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control NNE",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "1",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control ENE",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "3",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control ESE",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "2",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control SSE ymaps3-signpost-control_hidden",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "0",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control SSW",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "1",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control WSW",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "4",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control WNW",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "7",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control NNW",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "1",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+  ],
+  "nodeName": "ymaps3",
+}
+`;
+
+exports[`YMap smoke test should match snapshot map 2 1`] = `
+{
+  "attributes": {
+    "class": "ymaps3--map-container",
+  },
+  "children": [
+    {
+      "attributes": {
+        "class": "ymaps3--map",
+        "style": "width: 643px; height: 856px;",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3--main-engine-container",
+          },
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {
+                    "class": "ymaps3--layer ymaps3--tile-layer",
+                    "style": "opacity: 1; perspective: 1597.3177456394797px;",
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "class": "ymaps3--tile-layer__container",
+                        "data-z": "12",
+                        "style": "transform: rotateX(0.00000rad) translate3d(0px, 0px, -11181.224219476357px) rotateZ(0.00000rad) translate3d(-48991px, -120015px, 0px); z-index: 0;",
+                      },
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--tile-layer__container",
+                        "data-z": "9",
+                        "style": "transform: rotateX(0.00000rad) translate3d(0px, 0px, 0px) rotateZ(0.00000rad) translate3d(0px, 0px, 0px); z-index: 12;",
+                      },
+                      "nodeName": "ymaps3",
+                    },
+                  ],
+                  "nodeName": "ymaps3",
+                },
+              ],
+              "nodeName": "ymaps3",
+            },
+          ],
+          "nodeName": "ymaps3",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3--top-engine-container",
+          },
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {
+                    "class": "ymaps3--layer ymaps3--graphics-layer",
+                    "style": "opacity: 1; perspective: 1597.3177456394797px;",
+                  },
+                  "nodeName": "ymaps3",
+                },
+                {
+                  "attributes": {
+                    "class": "ymaps3--layer ymaps3--marker-layer",
+                    "style": "opacity: 1; transform-origin: 321.5px 428px;",
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5816.5000000000px, -14629.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5829.5000000000px, -14590.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5878.5000000000px, -14595.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5780.5000000000px, -14585.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5855.5000000000px, -14586.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5864.5000000000px, -14556.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5848.5000000000px, -14504.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5720.5000000000px, -14648.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5720.5000000000px, -14574.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5846.5000000000px, -14541.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5882.5000000000px, -14583.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5880.5000000000px, -14654.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5776.5000000000px, -14570.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5838.5000000000px, -14608.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5860.5000000000px, -14644.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5860.5000000000px, -14589.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5872.5000000000px, -14586.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5864.5000000000px, -14514.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5777.5000000000px, -14637.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5726.5000000000px, -14534.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5829.5000000000px, -14616.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5743.5000000000px, -14626.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5884.5000000000px, -14492.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5786.5000000000px, -14535.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                    {
+                      "attributes": {
+                        "class": "ymaps3--marker",
+                        "style": "transform: translate(-5720.5000000000px, -14539.0000000000px); z-index: 0;",
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "nodeName": "ymaps3",
+                        },
+                      ],
+                      "nodeName": "ymaps3",
+                    },
+                  ],
+                  "nodeName": "ymaps3",
+                },
+              ],
+              "nodeName": "ymaps3",
+            },
+          ],
+          "nodeName": "ymaps3",
+        },
+      ],
+      "nodeName": "ymaps3",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3--map-copyrights ymaps3--map-copyrights_bottom ymaps3--map-copyrights_right",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3--map-copyrights__container",
+          },
+          "children": [
+            {
+              "attributes": {
+                "class": "ymaps3--map-copyrights__text",
+                "title": "",
+              },
+              "nodeName": "ymaps3",
+            },
+            {
+              "attributes": {
+                "class": "ymaps3--map-copyrights__user-agreements",
+                "href": "https://yandex.com/legal/maps_termsofuse/?lang=en_US",
+                "target": "_blank",
+              },
+              "children": [
+                "User Agreement",
+              ],
+              "nodeName": "a",
+            },
+          ],
+          "nodeName": "ymaps3",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3--map-copyrights__logo ymaps3--icon-logo-en-black",
+            "href": "https://yandex.ru/maps/?from=api-maps&utm_source=jsapi&ll=37.62308199999998%2C55.752539999993736&origin=jsapi_3&z=12&l=map",
+          },
+          "nodeName": "a",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3--map-copyrights__scale",
+            "style": "bottom: 36px;",
+          },
+          "nodeName": "ymaps3",
+        },
+      ],
+      "nodeName": "ymaps3",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control NNE ymaps3-signpost-control_hidden",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "0",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control ENE ymaps3-signpost-control_hidden",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "0",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control ESE ymaps3-signpost-control_hidden",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "0",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control SSE ymaps3-signpost-control_hidden",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "0",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control SSW ymaps3-signpost-control_hidden",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "0",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control WSW ymaps3-signpost-control_hidden",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "0",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control WNW ymaps3-signpost-control_hidden",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "0",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+    {
+      "attributes": {
+        "class": "ymaps3-signpost-control NNW",
+      },
+      "children": [
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__count",
+          },
+          "children": [
+            "25",
+          ],
+          "nodeName": "div",
+        },
+        {
+          "attributes": {
+            "class": "ymaps3-signpost-control__arrow",
+          },
+          "nodeName": "div",
+        },
+      ],
+      "nodeName": "div",
+    },
+  ],
+  "nodeName": "ymaps3",
+}
+`;

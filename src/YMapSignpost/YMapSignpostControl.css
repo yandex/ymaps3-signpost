@@ -1,0 +1,96 @@
+.ymaps3-signpost-control {
+    --ymaps3-signpost-control-margin-x: 16px;
+    --ymaps3-signpost-control-margin-y: 20px;
+
+    position: absolute;
+    display: flex;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow:
+        0px 4px 12px 0px rgba(95, 105, 131, 0.1),
+        0px 4px 24px 0px rgba(95, 105, 131, 0.04);
+}
+
+.ymaps3-signpost-control_hidden {
+    display: none;
+}
+
+.ymaps3-signpost-control__count {
+    color: #34374a;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.ymaps3-signpost-control__arrow {
+    background-image: url('../assets/arrow.svg?inline');
+    width: 16px;
+    height: 16px;
+}
+
+.ymaps3-signpost-control.NNE {
+    top: var(--ymaps3-signpost-control-margin-y);
+    right: calc(100% / 6 * 2);
+
+    .ymaps3-signpost-control__arrow {
+        transform: rotate(22.5deg);
+    }
+}
+.ymaps3-signpost-control.NNW {
+    top: var(--ymaps3-signpost-control-margin-y);
+    left: calc(100% / 6 * 2);
+
+    .ymaps3-signpost-control__arrow {
+        transform: rotate(-22.5deg);
+    }
+}
+.ymaps3-signpost-control.SSE {
+    bottom: var(--ymaps3-signpost-control-margin-y);
+    right: calc(100% / 6 * 2);
+
+    .ymaps3-signpost-control__arrow {
+        transform: rotate(157.5deg);
+    }
+}
+.ymaps3-signpost-control.SSW {
+    bottom: var(--ymaps3-signpost-control-margin-y);
+    left: calc(100% / 6 * 2);
+
+    .ymaps3-signpost-control__arrow {
+        transform: rotate(-157.5deg);
+    }
+}
+.ymaps3-signpost-control.WNW {
+    top: calc(100% / 4);
+    left: var(--ymaps3-signpost-control-margin-x);
+
+    .ymaps3-signpost-control__arrow {
+        transform: rotate(-67.5deg);
+    }
+}
+.ymaps3-signpost-control.WSW {
+    bottom: calc(100% / 4);
+    left: var(--ymaps3-signpost-control-margin-x);
+    .ymaps3-signpost-control__arrow {
+        transform: rotate(-112.5deg);
+    }
+}
+.ymaps3-signpost-control.ENE {
+    top: calc(100% / 4);
+    right: var(--ymaps3-signpost-control-margin-x);
+
+    .ymaps3-signpost-control__arrow {
+        transform: rotate(67.5deg);
+    }
+}
+.ymaps3-signpost-control.ESE {
+    bottom: calc(100% / 4);
+    right: var(--ymaps3-signpost-control-margin-x);
+
+    .ymaps3-signpost-control__arrow {
+        transform: rotate(112.5deg);
+    }
+}
