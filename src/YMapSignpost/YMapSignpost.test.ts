@@ -1,17 +1,6 @@
 import type {LngLat, YMap} from '@yandex/ymaps3-types';
 import {YMapSignpost} from './YMapSignpost';
 
-function mapSnapshot(container: HTMLElement) {
-    const snapshot = container.cloneNode(true) as HTMLElement;
-    // The live API may omit this empty service container. Keep populated controls in the snapshot.
-    snapshot
-        .querySelectorAll(
-            'ymaps3.ymaps3--controls.ymaps3--controls_bottom.ymaps3--controls_left.ymaps3--controls_horizontal:empty'
-        )
-        .forEach((control) => control.remove());
-    return domToJson(snapshot);
-}
-
 describe('YMap smoke test', () => {
     const MARKERS_COORDINATES: Array<LngLat> = [
         [37.583423, 55.837911],
@@ -71,7 +60,7 @@ describe('YMap smoke test', () => {
     });
 
     it('should make map', () => {
-        const tree = mapSnapshot(map.container);
+        const tree = domToJson(map.container);
         expect(tree).toMatchSnapshot();
     });
 
@@ -84,7 +73,7 @@ describe('YMap smoke test', () => {
                 ]
             }
         });
-        const tree = mapSnapshot(map.container);
+        const tree = domToJson(map.container);
         expect(tree).toMatchSnapshot();
     });
 });
